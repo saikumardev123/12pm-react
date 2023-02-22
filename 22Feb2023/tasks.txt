@@ -1,0 +1,3 @@
+1. Practice arrow functions, default parameter values 
+2. explore more articles / blogs on arrow functions, default parameter values 
+3. Watch crash course on es6 (from youtube, if possible)
