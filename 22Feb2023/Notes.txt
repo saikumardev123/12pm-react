@@ -1,0 +1,122 @@
+ES6 vs Typescript:
+
+ES6:
+An extension of ES5 where some of the ES5 concepts are improvised. 
+
+
+Typescript: It is a full fledged object oriented programming language developed 
+by Microsoft.  
+
+It converts Object oriented code to JS code.
+
+documentation: http://es6-features.org/#Constants
+
+Arrow Functions:
+
+Arrow functions are modified version of es5 functions in terms of 
+syntax. 
+
+An arrow function expression is a compact alternative to a traditional function expression, 
+
+es5:
+syntax:
+
+function function_name(parameters){
+
+}
+
+function_name(arguments);
+
+es6:
+
+syntax:
+
+var var_name = () => {    };
+
+
+code:
+
+function square(num) {
+    return num * num;
+}
+console.log(square(10));
+
+var sqr = num => num * num;
+
+console.log(sqr(10));
+
+
+code:
+
+var users = [
+    {
+        name: "kiran",
+        address: "hyderabad"
+    },
+    {
+        name: "rajesh",
+        address: "banglore"
+    },
+    {
+        name: "nikhil",
+        address: "chennai"
+    }
+]
+
+// ES5:
+users.forEach(function (user) {
+    console.log(user.name + "\t" + user.address);
+})
+
+//ES6:
+users.forEach(user => console.log(user.name + "\t" + user.address));
+
+Key Points:
+
+1. Use arrow functions when we have to write single liner implementations. 
+
+2. if we have only one parameter, then we can ignore paranthesis ().
+
+3. We can use rest parameters, default values with arrow functions. 
+
+4. some syntaxes:
+
+param => expression
+
+(param) => expression
+
+(param1, paramN) => expression
+
+param => {
+  statements
+}
+
+(param1, paramN) => {
+  statements
+}
+
+Default parameter values:
+
+// es5
+function f1(a, b, c) {
+    if (a == undefined) {
+        a = 20;
+    }
+    if (b == undefined) {
+        b = 30;
+    }
+    if (c == undefined) {
+        c = 40;
+    }
+    console.log(a);
+    console.log(b);
+    console.log(c);
+}
+f1(1, 2, 3);
+
+//es6:
+
+function f2(a = 8, b = 9, c = 6) {
+    console.log(a, b, c);
+}
+f2(90, 190, 290);
