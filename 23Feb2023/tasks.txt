@@ -1,0 +1,9 @@
+1. expore concepts like rest parameters, spread operators, interploation.
+
+https://www.javascripttutorial.net/es6/javascript-rest-parameters/ 
+
+https://www.javascripttutorial.net/es6/javascript-spread/
+
+https://www.javascripttutorial.net/es6/javascript-template-literals/\
+
+Note: follow above links and practice.

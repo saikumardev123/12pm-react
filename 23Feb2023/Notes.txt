@@ -1,0 +1,145 @@
+Rest parameter:
+
+
+// ES6
+function f2(a, b, c, ...additionalParams) {
+    console.log(a);
+    console.log(b);
+    console.log(c);
+    console.log(additionalParams);
+    additionalParams.push(a, b, c);
+    console.log(additionalParams);
+}
+f2(10, 20, 30, 40, 50, 560);
+
+
+Spread Operator:
+
+
+function f1(a, b, c,) {
+    console.log(a); //
+    console.log(b); //
+    console.log(c); //
+}
+var arr = [10, 20, 30];
+f1(arr[0], arr[1], arr[2]); // es5 
+f1(...arr); // spread the array and assign them to as individual values
+
+code:
+
+
+function f1(a, b, c) {
+    console.log(a); // 10
+    console.log(b); // undefined
+    console.log(c); // undefined
+}
+var arr1 = [10];
+var arr2 = [20, 30];
+//f1(arr[0], arr[1], arr[2]); // es5 
+f1(...arr1, ...arr2); // spread the array and assign them to as individual values
+
+
+String Interpolation:
+
+
+PS:  Create the following template using ES5. 
+
+      
+         Dear User, 
+
+                     Your password is expired. Please click on this link to renew it. 
+
+
+        Thanks,
+        Support Team
+
+
+
+
+
+// es5
+
+var str = "\tDear User, \n\n\t\t Your password is expired, Please click here to reset the password. \n\n \tThanks & Regards,\n\t Support Team!";
+console.log(str);
+
+//es6
+var str2 = `
+        Dear User, 
+
+                           Your password is expired, Please click here to reset the password. 
+
+        Thanks & Regards,
+        Support Team!
+             `;
+console.log(str2);
+
+
+Custom Interpolation:
+
+
+
+
+var employee = {
+    name: "Kiran",
+    Rep_manager: "Rajesh",
+    hike: "10%",
+    currentCTC: "10LPA",
+    revisedCTC: "11LPA",
+    role: "Senior Dev"
+}
+
+
+var str2 = `
+                Dear ${employee.name}, 
+                 
+                                          Based on your performance, contribution to the organization. You have got the 
+                                          highest hike of ${employee.hike}. Your current ctc is ${employee.currentCTC} is revised to 
+                                          ${employee.revisedCTC}.  
+
+                                          Your new role is ${employee.role}. 
+
+                 Thanks, 
+                  ${employee.Rep_manager}
+             `;
+console.log(str2);
+
+
+
+PS: 
+
+var employee = [{
+    name: "Kiran",
+    Rep_manager: "Rajesh",
+    hike: "10%",
+    currentCTC: "10LPA",
+    revisedCTC: "11LPA",
+    role: "Senior Dev"
+}, 
+{
+    name: "Kiran",
+    Rep_manager: "Rajesh",
+    hike: "10%",
+    currentCTC: "10LPA",
+    revisedCTC: "11LPA",
+    role: "Senior Dev"
+},
+{
+    name: "Kiran",
+    Rep_manager: "Rajesh",
+    hike: "10%",
+    currentCTC: "10LPA",
+    revisedCTC: "11LPA",
+    role: "Senior Dev"
+},
+{
+    name: "Kiran",
+    Rep_manager: "Rajesh",
+    hike: "10%",
+    currentCTC: "10LPA",
+    revisedCTC: "11LPA",
+    role: "Senior Dev"
+}
+];
+
+
+
