@@ -1,0 +1,182 @@
+Classes:
+A class is a design / blue print of a realtime object. 
+We create classes to represent some template of an object. 
+syntax:
+
+class classname{
+     //variables 
+     // methods
+}
+
+class Customer {
+    name;
+    cid;
+    balance;
+    accountNumber;
+
+    constructor(name, cid, balance, accountNumber) {
+        this.name = name;
+        this.cid = cid;
+        this.balance = balance;
+        this.accountNumber = accountNumber;
+    }
+
+    deposit(amount) {
+        this.balance = this.balance + amount;
+    }
+    withdraw(amount) {
+
+        this.balance = this.balance - amount;
+    }
+
+    transfer(amount, reciver) {
+        this.balance = this.balance - amount;
+        reciver.balance = reciver.balance + amount;
+    }
+
+}
+
+var customer = new Customer("kiran", 101, 9000, 1907899978);
+customer.deposit(9000);
+customer.withdraw(2000);
+console.log(customer);
+
+var customer2 = new Customer("rajesh", 102, 97999, 678890);
+console.log(customer2);
+
+customer2.transfer(10000, customer);
+console.log(customer2);
+console.log(customer);
+
+Inheritance:
+
+It is the process where a class extends another class for reusability 
+of 
+resources. 
+
+
+class Bank {
+    nameOfBank = "ICICI";
+    address = "madhapur";
+    ifsc_code = "ICICI6548867";
+}
+class Customer extends Bank {
+    name;
+    cid;
+    balance;
+    accountNumber;
+
+
+    constructor(name, cid, balance, accountNumber) {
+        super();
+        this.name = name;
+        this.cid = cid;
+        this.balance = balance;
+        this.accountNumber = accountNumber;
+    }
+
+    deposit(amount) {
+        this.balance = this.balance + amount;
+    }
+    withdraw(amount) {
+
+        this.balance = this.balance - amount;
+    }
+
+    transfer(amount, reciver) {
+        this.balance = this.balance - amount;
+        reciver.balance = reciver.balance + amount;
+    }
+
+}
+
+var customer = new Customer("kiran", 101, 9000, 1907899978);
+customer.deposit(9000);
+customer.withdraw(2000);
+console.log(customer);
+
+var customer2 = new Customer("rajesh", 102, 97999, 678890);
+console.log(customer2);
+
+customer2.transfer(10000, customer);
+console.log(customer2);
+console.log(customer);
+
+Static members:
+
+If we want to create varibles that can have only one copy, then we can 
+use static members. 
+
+
+class A {
+    static a = 100;
+    static b = 200;
+    static m1() {
+        console.log("I am m1()");
+        A.a = 80;
+    }
+}
+
+console.log(A.a);
+A.m1();
+console.log(A.a);
+
+-------------------------------------
+
+setters and getters:
+
+class Employee {
+    eid;
+    ename;
+
+    set employeeId(eid) {
+        if (eid < 0) {
+            console.log("eid cannot be less than 0");
+        }
+        else {
+            this.eid = eid;
+        }
+    }
+
+    get employeeId() {
+        return this.eid;
+    }
+
+}
+var employee = new Employee();
+employee.employeeId = 1;
+employee.ename = "kiran";
+console.log(employee.employeeId);
+
+-----------------------------------------------
+
+function Generators:
+
+
+
+function* f1() {
+    console.log("line1");
+    console.log("line2");
+    yield "step1";
+    console.log("line3");
+    console.log("line4");
+    yield "step2";
+    console.log("line5");
+    yield "step3";
+    console.log("line6");
+}
+
+var iterator = f1();
+iterator.next();
+if (true) {
+    console.log("work done");
+}
+iterator.next();
+
+console.log(iterator.next());
+console.log(iterator.next());
+
+promises:
+
+
+
