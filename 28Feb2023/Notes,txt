@@ -1,0 +1,15 @@
+Promises:
+
+Whenever we make an async api call, we need to handle the response 
+provided by the server. 
+
+The possibilities of a response can be success or failure. 
+
+The backend applications provides the response that can contain success data or 
+failure data. 
+
+The promises handles the response wisely using resolve (success) and reject(failure) functions. 
+
+We use axios to make API calls in react. 
+
+
