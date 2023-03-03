@@ -1,0 +1,83 @@
+Components: 
+
+
+Creating and maintaing data in components:
+
+App.js:
+
+import './App.css';
+import Movies from './Movies';
+import Products from './Products';
+function App() {
+  return (
+    <div className="App">
+      <h1>App Component</h1>
+      <Movies></Movies>
+      <Products></Products>
+    </div>
+  );
+}
+
+export default App;
+
+/*
+
+            App
+
+
+     Movies        Products
+
+*/
+
+
+movies:
+
+
+import React from 'react';
+class Movies extends React.Component {
+
+    movie = {
+        name: "some movie",
+        runtime: 155,
+        releaseDate: "12 March 2023"
+    }
+
+    render() {
+        return (
+            <div>
+                <h1>Movies Component!</h1>
+                <h1>{this.movie.name} {this.movie.runtime} {this.movie.releaseDate}</h1>
+            </div>
+        )
+    }
+}
+export default Movies;
+
+
+Products:
+
+function Products() {
+
+    var product = {
+        pid: 101,
+        name: "xyz"
+    }
+
+    return (
+        <div>
+            <h1>Products!</h1>
+            <h1>{product.pid} {product.name}</h1>
+        </div>
+    )
+}
+export default Products;
+
+
+state:
+ 
+ state is a predefined object provided by React.Component to maintain the data populated 
+ inside the component.
+
+
+
+
