@@ -1,0 +1,9 @@
+Problem Statement:
+
+create a token in App Component and send it to User component and 
+from user component send it to changepassword component. 
+
+
+    App   -> variable -> token
+    User   -> display token   user: <token>
+    Changepwd  -> display token  changepassword: <token>
