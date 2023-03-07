@@ -10,7 +10,6 @@ function LoginFBased() {
         var value = event.target.value;
         //this.state.username = value;
         setLoginForm({ ...loginForm, username: value });
-
     }
     const updatePassword = (event) => {
         var value = event.target.value;
