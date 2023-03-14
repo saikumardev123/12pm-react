@@ -1,0 +1,36 @@
+Problem Statement: 
+
+1. Create a registration form with the following fields. 
+  
+    username, password, emailid, mobile number and display the content 
+    on the UI. 
+
+    10 mins.
+
+Steps: 
+
+1. create form 
+
+2. use - useState() 
+
+3. create the object. 
+
+  useState( {
+      username: '',
+      password: '',
+      ...
+  })
+
+4. capture them and display on UI.
+
+5. send the child component's data to parent data. 
+
+6. Store that data in app component's useState and send it to another 
+component.
+
+
+Reg -> App -> Users (display data)
+
+
+
+

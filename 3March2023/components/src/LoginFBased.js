@@ -32,7 +32,6 @@ function LoginFBased() {
 
         </div>
     )
-
 }
 
 export default LoginFBased;
