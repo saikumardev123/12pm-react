@@ -1,9 +1,10 @@
-import logo from './logo.svg';
+
 import './App.css';
 import { useEffect, useState } from 'react';
 import axios from 'axios';
 
 import VideosList from './VideosList';
+import VideoPlayer from './VideoPlayer';
 const API_KEY = "AIzaSyDlenGQKX3SqsLVSzL6AZKpV4FU0SQah0o";
 function App() {
   const [videosList, setVideosList] = useState(
@@ -26,12 +27,12 @@ function App() {
           console.log(error);
         }
       )
-
     }, []
   )
   return (
     <div>
       <h1>I am in App</h1>
+      <VideoPlayer></VideoPlayer>
       <VideosList videos={videosList.videos}></VideosList>
     </div>
   );
@@ -41,7 +42,6 @@ export default App;
 https://www.googleapis.com/youtube/v3/search?part=snippet&key=&q=java&type=video&maxResults=5
 
 */
-
 
 /*
 
