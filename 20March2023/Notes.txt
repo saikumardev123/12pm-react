@@ -1,0 +1,7 @@
+Code-Splitting:
+
+
+Web pack:  bundler - converts all files into 1 file (bundler) 
+
+
+
