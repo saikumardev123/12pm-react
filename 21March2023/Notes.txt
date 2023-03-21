@@ -1,0 +1,22 @@
+Context:
+
+     
+           App (data)
+
+       A          B 
+
+    C 
+
+ E     F  
+
+         Z 
+
+    M       N
+
+
+
+         App  -> videos= [{ videoId:101, videoId:102}]
+
+         VideoList 
+
+         VideoPlayer videos= [{ videoId:101, videoId:102}]
