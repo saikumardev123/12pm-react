@@ -1,0 +1,38 @@
+Inheritance vs Composition:
+
+Inheritance: 
+
+class A{
+
+}
+class B{
+
+}
+class C extends A,B{
+
+}
+
+Inheritance follows is - a relationhip
+
+Since multiple Inheritance is not supported by React, hence React uses 
+Composition.
+
+Composition follows has-a relationship.
+
+class A{
+
+}
+class B{
+
+}
+class C{
+     var x= new B(); 
+     var y= new A();
+}
+
+React has chosen composition over Inheritance.
+
+Thinking in React:
+
+
+
