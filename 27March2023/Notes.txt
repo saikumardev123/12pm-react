@@ -1,0 +1,23 @@
+Problem Statement:
+
+Create a HOC that maintains axios get API call logic. 
+
+
+const HOC = (data,Component){
+
+   const Comp = () => {
+     const [data, setData] = useState([]);
+
+ const makeAPICall = async (url) => {
+const response = await axios.get(data);
+setData(response);
+   }
+  
+  return <Component data={data} makeAPICall={makeAPICall}>
+
+ }
+
+ return Comp;
+
+
+}

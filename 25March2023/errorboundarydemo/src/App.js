@@ -5,9 +5,6 @@ import ErrorBoundary from './ErrorBoundary';
 import React from 'react';
 
 function App() {
-
-  // 4 lines of code
-
   return (
     <React.Fragment>
       <ErrorBoundary>
