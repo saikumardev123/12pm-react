@@ -1,0 +1,40 @@
+Redux:
+
+Redux is a gobal state management library used to maintain the state 
+of the application. 
+
+UI Rendering  - React
+Data Management - Redux
+
+
+Redux Entities:
+
+1. Container : Any react component that interacts with redux is considered as 
+Container.
+
+2. Action: An action is a function that takes care of preparing the data (by making API calls).
+
+outcome:  action object 
+
+ action object :    {
+       payload: '', 
+       type: ''
+ }
+
+3. Reducer:  Reducer is also a function that takes action object, filters the data and sends it to root 
+reducer. 
+
+
+4. Root Reducer : Root reducer is a collection of all reducers. The root reducer is used by store to store the 
+application state.
+
+5. Store : is a predefined component that stores the application state.
+
+
+Application Data Generation:  Container -> Action -> reducer -> root reducer -> Store 
+
+Application Data Access:  Container -> Store 
+
+
+
+
