@@ -6,11 +6,12 @@ import reportWebVitals from './reportWebVitals';
 import { createStore, applyMiddleware } from 'redux';
 import { Provider } from 'react-redux';
 import rootReducer from './Reducers/index';
+import ReduxPromise from 'redux-promise';
 
 // const store = createStore();
 
 // store(reducers);
-const store = applyMiddleware()(createStore);
+const store = applyMiddleware(ReduxPromise)(createStore);
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <Provider store={store(rootReducer)}>

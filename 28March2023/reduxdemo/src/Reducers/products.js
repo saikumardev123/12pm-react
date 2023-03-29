@@ -1,13 +1,9 @@
-export default function (action, state = []) {
-
-    console.log(action);
+export default function (state = [], action) {
+    console.log("reducer");
 
     switch (action.type) {
-
-        case 'GET_PRODUCTS': // CODE 
-
+        case 'GET_PRODUCTS': return action.payload.data;
         default: return state;
-
     }
-
 }
+
