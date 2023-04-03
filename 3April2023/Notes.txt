@@ -1,0 +1,2 @@
+
+https://api.tomorrow.io/v4/timelines?location=17.4505423,78.3822519&fields=temperature&timesteps=1h&units=metric&apikey=okB7Y1GRD5kZMXyz4BPeCWRl6XI7dmes
