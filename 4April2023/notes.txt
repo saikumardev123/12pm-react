@@ -1,0 +1,13 @@
+WorkFlow:
+
+1. install redux toolkit 
+
+2. create the store ->  configureStore 
+
+3. add the store into provider. 
+
+4. create slice -> specify the reducers into it. 
+
+5. import the reducers(slice) into configureStore 
+
+6. Container -> useDispatch() - dispatch the action, useSelector() - get the application state. 

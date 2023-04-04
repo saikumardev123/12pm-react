@@ -42,3 +42,7 @@ export default connect((appState) => {
 
 
 //https://www.chartjs.org/docs/latest/charts/bar.html
+
+
+
+
